@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Lab Task 1
+        // Display each value of your array with index number
+        var arrOfNumbers = [10, 55, 40, 78, 89, 56, 30, 20, 10, 50, 40];
+
+        for(var i= 0; i < arrOfNumbers.length; i++){
+            document.write(`<p> This is array with index number ${i} ${arrOfNumbers[i]} </p>`);
+        }
+
+        // Lab Task 2
+        var myArrays = ["Tolulope","Grace", "James", "Ayokunle", "Juwon", "Ebenezer", "Rachael", "Eleganza", "Lola", "Susan", "Wonderful", "Oluwaseun", "Oluwatoyin"];
+        //1st Example
+
+        for (var m = 1; m <myArrays.length; m++) {
+            document.write(`<p> This is array with index number ${m} ${myArrays[m]} </p>`);    
+             }
+
+        // 2nd Example
+        var j =0;
+        for(; j<myArrays.length; j++)
+        {
+            document.write(`<p> This is array with index number ${j} ${myArrays[j]} </p>`);
+        }
+
+        // 3rd Example
+        for(let k = 0; ; k++)
+        {
+         if(k>=myArrays.length){
+             break;
+         }
+         document.write(`<p> This is array with index number ${k} ${myArrays[k]} </p>`);
+        }
+
+        // 4th Example
+        var L = 0;
+        for(;;){
+            if(L>=myArrays.length){
+                break;
+            }
+            document.write(`<p> This is array with index number ${L} ${myArrays[L]} </p>`);           
+             L++;
+        }
+
+    </script>
+</body>
+</html>
